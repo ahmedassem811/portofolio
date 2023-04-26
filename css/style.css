@@ -1,0 +1,268 @@
+/* *** *** Global Styles *** *** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.bg-grey{
+    background-color: #f7f7f7;
+}
+
+/* Navbar Styles When hover links */
+  .navbar-nav a::after {
+    content: "";
+    position: absolute;
+    left:0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(254, 254, 254);
+    transition: width .5s ease-in-out;
+  }
+  .navbar-nav a:hover::after {
+    width: 80%;
+  }
+
+  .navbar{
+    background-color:  rgb(0 0 0 / 40%);
+  }
+
+
+  .scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+/* End of Navbar styles */
+
+
+
+/* Styles of landing Section */
+.landing {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0 0 500px 1000px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    height: 100vh;
+}
+
+/* .landing span::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+@keyframes typing{
+    0%{content: "L|";}
+    2%{content: "La|";}
+    4%{content: "Lar|";}
+    6%{content: "Larr|";}
+    8%{content: "Larry|";}
+    10%{content: "Larry |";}
+    12%{content: "Larry D|";}
+    14%{content: "Larry Da|";}
+    16%{content: "Larry Dan|";}
+    18%{content: "Larry Dani|";}
+    20%{content: "Larry Danie|";}
+    22%{content: "Larry Daniel|";}
+    24%{content: "Larry Daniels|";}
+    25%{content: "Larry Daniels|";}
+    26%{content: "Larry Daniel|";}
+    28%{content: "Larry Danie|";}
+    30%{content: "Larry Dani|";}
+    32%{content: "Larry Dan|";}
+    36%{content: "Larry Da|";}
+    38%{content: "Larry D|";}
+    40%{content: "Larry |";}
+    44%{content: "Larry|";}
+    46%{content: "Larr|";}
+    48%{content: "Lar|";}
+    50%{content: "La|";}
+    52%{content: "L|";}
+    54%{content: "|";}
+    56%{content: "D|";}
+    58%{content: "De|";}
+    60%{content: "Des|";}
+    62%{content: "Desi|";}
+    64%{content: "Desig|";}
+    66%{content: "Design|";}
+    70%{content: "Designe|";}
+    72%{content: "Designer|";}
+    74%{content: "Designer|";}
+    76%{content: "Designe|";}
+    78%{content: "Design|";}
+    80%{content: "Desig|";}
+    82%{content: "Desi|";}
+    84%{content: "Des|";}
+    86%{content: "De|";}
+    90%{content: "D|";}
+    100%{content: "|";}
+} */
+
+.landing .landing-content .socialBtns i,
+.overlay .hvr-icon i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+/* End Of Styles of landing Section */
+
+
+
+/* About Section Styles */
+.about-img::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 95px;
+    left: -20px;
+    z-index: -1;
+    background-image: url(../images/dots.png);
+    background-position: center center;
+}
+
+.cvBtns .download:hover {
+    background-color: #fff !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+.cvBtns .contact:hover {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+/* End of About Section Styles */
+
+
+
+/* Services Section */
+.icon,
+.contact-icon {
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #000000;
+    margin-bottom: 0.8rem;
+    transition: all 500ms ease;
+}
+
+.card:hover .icon {
+    background-color: #000000;
+    color: #fafafa;
+}
+
+.title-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    background-image: url(../images/dots.png);
+    background-position: center center;
+}
+/* End of services Section */
+
+
+/* portfolio Section */
+
+.filter-button:hover {
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.overlay .hvr-icon i {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: 0.5px solid black;
+}
+
+.overlay .hvr-icon i:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: 0.5px solid black;
+}
+
+.overlay {
+    position: absolute;
+    top: 2.5%;
+    bottom: 0;
+    left: 5%;
+    right: 0;
+    width: 90%;
+    height: 95%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(255, 255, 255);
+}
+
+.text,
+.hvr-icon {
+    opacity: 0;
+    transition: 0.7s linear;
+}
+
+.gallery_product:hover .overlay {
+    opacity: 1;
+}
+
+.gallery_product:hover .text,
+.gallery_product:hover .hvr-icon {
+    opacity: 1;
+    transform: translateY(130px);
+}
+/* End of portfolio Section */
+
+
+/* Testimonials Section */
+.feedback{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.slide-btn{
+    width:10px !important;
+    height: 10px !important;
+}
+/* End of Testimonials Section */
+
+
+/* Contact us Section */
+.contact-icon{
+
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+}
+
+.contact-icon:hover{
+    background-color: #000000;
+    color: #fafafa;
+}
+/* End of Contact us Section */
+
